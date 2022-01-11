@@ -21,7 +21,7 @@ def roll_die(player, die, pos, scores):
     return scores[player]
 
 
-pos = [5, 6]
+pos = [int(x.strip()[-1]) for x in open("input.txt")]
 scores = [0, 0]
 player = 0
 die = sim_die(100)

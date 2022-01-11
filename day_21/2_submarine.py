@@ -25,4 +25,4 @@ def player_wins(universe):
     return result
 
 
-print(player_wins((0, (5, 6), (0, 0))))
+print(player_wins((0, tuple(int(x.strip()[-1]) for x in open("input.txt")), (0, 0))))
